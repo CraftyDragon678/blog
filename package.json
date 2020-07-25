@@ -5,7 +5,7 @@
   "scripts": {
     "hugo": "cd hugo && hugo server -D -p 3000",
     "webpack:watch": "webpack -w",
-    "predeploy": "cd components && yarn build && cd .. && cd hugo && hugo && cd public && echo cragon.kro.kr > CNAME",
+    "predeploy": "cd components && yarn build && cd .. && cd hugo && hugo && cd public && echo blog.cragon.kro.kr > CNAME",
     "deploy": "gh-pages -d hugo/public"
   },
   "devDependencies": {
