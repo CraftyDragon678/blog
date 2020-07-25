@@ -1,9 +1,7 @@
 {{ define "main" }}
-  {{ partial "header" . }}
   <article class="post">
     <h1 class="title">
       {{ .Title }}
-      <theme-switch></theme-switch>
     </h1>
     <span class="date">- {{ dateFormat "January 1, 2006" .Date }}</span>
     {{ if .Params.Summary }}

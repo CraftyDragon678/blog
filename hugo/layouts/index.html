@@ -1,7 +1,5 @@
 {{ define "main"}}
 
-{{ partial "header" . }}
-
 {{ range first 3 (where .Paginator.Pages ".File.Dir" "posts/") }}
   <link rel="prefetch" href="{{ .Permalink }}">
 {{ end }}
