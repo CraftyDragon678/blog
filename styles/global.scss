@@ -1,0 +1,110 @@
+:root {
+  --light-text: black;
+  --light-bg: white;
+  --light-content-topic-border: 1px solid #D9D9D9;
+  --light-subtitle: #404040;
+  --light-footer: #2F3030;
+
+  --dark-text: white;
+  --dark-bg: #0f1517;
+  --dark-content-topic-border: 1px solid #595959;
+  --dark-subtitle: #D9D9D9;
+  --dark-footer: #CACFCF;
+
+  --gray5: #A0AEC0;
+}
+
+.light {
+  color: var(--light-text);
+  background: var(--light-bg);
+
+  --text-color: var(--light-text);
+  --bg-color: var(--light-bg);
+  --content-topic-border: var(--light-content-topic-border);
+  --subtitle-color: var(--light-subtitle);
+  --footer-color: var(--light-footer);
+}
+
+.dark {
+  color: var(--dark-text);
+  background: var(--dark-bg);
+
+  --text-color: var(--dark-text);
+  --bg-color: var(--dark-bg);
+  --content-topic-border: var(--dark-content-topic-border);
+  --subtitle-color: var(--dark-subtitle);
+  --footer-color: var(--dark-footer);
+}
+
+.content {
+  font-size: 1.125rem;
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+
+  h1, h2 {
+    margin-top: 2.25rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: var(--content-topic-border);
+  }
+
+  h3, h4, h5 {
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    margin-top: 0.25rem;
+    margin-bottom: 0.925rem;
+  }
+
+  a {
+    color: #0687f0;
+    text-decoration: none;
+    box-shadow: none;
+  }
+
+  blockquote {
+    padding-left: 1.475rem;
+    box-shadow: inset 3px 0 0 0 rgba(41, 41, 41, 1);
+    border-left: 2px black solid;
+    margin-left: 0px;
+  }
+
+  img {
+    margin-top: 0.5rem;
+  }
+
+  code:not([class]) {
+    padding: .2em .6em;
+    border-radius: .2em;
+    white-space: normal;
+    background: #6563e7;
+    color: #EBF8FF;
+  }
+
+  .highlight {
+    & > pre {
+      background: #212121;
+      border-radius: 0.25rem;
+      padding: 1rem;
+      overflow-x: auto;
+    }
+
+    code {
+      font-family: 'Fira Code', monospace;
+      font-size: 0.75rem;
+    }
+  }
+}
+
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+}

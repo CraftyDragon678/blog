@@ -1,0 +1,15 @@
+<div class="tags tags-all">
+  {{ $currentTag := .Title }}
+
+  {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+    {{ if eq $name $currentTag }}
+      <a href="/tags/{{ $name }}" class="tag">
+        <span class="tag-current tag-{{ $name }}">#{{ $name }}</span>
+      </a>
+    {{ else }}
+      <a href="/tags/{{ $name }}" class="tag">
+        <span class="tag-{{ $name }}">#{{ $name }}</span>
+      </a>
+    {{ end }}
+  {{ end }}
+</div>

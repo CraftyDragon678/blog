@@ -1,0 +1,9 @@
+baseURL = "https://cragon.kro.kr"
+languageCode = "ko-kr"
+title = "cragon"
+pygmentsUseClasses=true
+hasCJKLanguage=true
+
+[author]
+  name = "CraftyDragon678"
+

@@ -1,0 +1,43 @@
+{{ define "main" }}
+  {{ partial "header" . }}
+  <article class="post">
+    <h1 class="title">
+      {{ .Title }}
+      <theme-switch></theme-switch>
+    </h1>
+    <span class="date">- {{ dateFormat "January 1, 2006" .Date }}</span>
+    {{ if .Params.Summary }}
+      <p class="subtitle">{{ .Summary }}</p>
+    {{ end }}
+
+    {{ if .Params.Thumbnail }}
+      <img src="{{ .Params.Thumbnail }}" />
+    {{ end }}
+
+    <div class="content">
+      {{ .Content }}
+    </div>
+
+    <div class="navigator">
+      {{ if .Prev }}
+        {{ if eq .Prev.File.Dir "posts/" }}
+          <a rel="prev" href="{{ .Prev.Permalink }}">← {{ .Prev.Title }}</a>
+          <link rel="prefetch" href="{{ .Prev.Permalink }}">
+        {{ else }}
+          <a></a>
+        {{ end }}
+      {{ end }}
+      {{ if .Next }}
+        {{ if eq .Next.File.Dir "posts/" }}
+          <a rel="next" href="{{ .Next.Permalink }}">{{ .Next.Title }} →</a>
+          <link rel="prefetch" href="{{ .Next.Permalink }}">
+        {{ else }}
+          <a></a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </article>
+
+
+  {{/* partial "utterance" . */}}
+{{ end }}

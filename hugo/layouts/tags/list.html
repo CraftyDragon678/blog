@@ -1,0 +1,14 @@
+{{ define "main"}}
+
+{{ partial "header" . }}
+
+<theme-switch hidden></theme-switch>
+<h2 style="text-align: center;">🏷️ 태그</h2>
+
+{{ partial "tags-all" . }}
+
+{{ range .Paginator.Pages }}
+  {{ .Render "summary" }}
+{{ end }}
+
+{{ end }}

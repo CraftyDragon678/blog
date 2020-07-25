@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Noto+Sans+KR:wght@300;400;500&family=Sunflower:wght@300;500&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+main {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 39rem;
+}
+
+// global style
+
+@import './global.scss';
+
+@import './particals.scss';
+@import './posts.scss';
+@import './_default.scss';
