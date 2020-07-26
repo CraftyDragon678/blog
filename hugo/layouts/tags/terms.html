@@ -1,7 +1,5 @@
 {{ define "main"}}
 
-<h2 style="text-align: center;">🏷️ 태그</h2>
-
 {{ partial "tags-all" . }}
 
 {{ range where .Site.Pages ".File.Dir" "posts/" }}
