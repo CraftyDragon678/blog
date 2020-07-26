@@ -1,12 +1,15 @@
 :root {
   --light-text: black;
   --light-bg: white;
+  --light-header: #d2d2d2;
   --light-content-topic-border: 1px solid #D9D9D9;
   --light-subtitle: #404040;
   --light-footer: #2F3030;
 
   --dark-text: white;
   --dark-bg: #0f1517;
+  --dark-header: #282828;
+  --light-content-topic-border: 1px solid #D9D9D9;
   --dark-content-topic-border: 1px solid #595959;
   --dark-subtitle: #D9D9D9;
   --dark-footer: #CACFCF;
@@ -20,6 +23,7 @@
 
   --text-color: var(--light-text);
   --bg-color: var(--light-bg);
+  --header-color: var(--light-header);
   --content-topic-border: var(--light-content-topic-border);
   --subtitle-color: var(--light-subtitle);
   --footer-color: var(--light-footer);
@@ -31,6 +35,7 @@
 
   --text-color: var(--dark-text);
   --bg-color: var(--dark-bg);
+  --header-color: var(--dark-header);
   --content-topic-border: var(--dark-content-topic-border);
   --subtitle-color: var(--dark-subtitle);
   --footer-color: var(--dark-footer);
