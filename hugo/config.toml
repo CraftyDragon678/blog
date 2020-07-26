@@ -1,6 +1,6 @@
 baseURL = "https://cragon.kro.kr"
 languageCode = "ko-kr"
-title = "cragon"
+title = "Cragon's Blog"
 pygmentsUseClasses=true
 hasCJKLanguage=true
 
