@@ -4,9 +4,11 @@
       {{ .Title }}
     </h1>
     <span class="date">- {{ dateFormat "January 1, 2006" .Date }}</span>
-    {{ if .Params.Summary }}
-      <p class="subtitle">{{ .Summary }}</p>
-    {{ end }}
+    <p class="subtitle">
+      {{ if .Params.Summary }}
+        {{ .Summary }}
+      {{ end }}
+    </p>
 
     {{ if .Params.Thumbnail }}
       <img src="{{ .Params.Thumbnail }}" />
