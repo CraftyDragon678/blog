@@ -1,6 +1,5 @@
-
 .post { 
-  max-width: calc(100% - 1.75rem);
+  width: calc(100% - 1.75rem);
   margin-top: 4rem;
   margin-right: auto;
   margin-left: auto;
@@ -13,12 +12,10 @@
     font-weight: 500;
     font-family: 'Sunflower', sans-serif;
     margin-bottom: 0.25rem;
-
   }
 
   & > .date {
     font-size: 1.25rem;
-    font-style: italic;
     color: var(--gray5);
     margin-left: 0.5rem;
   }
