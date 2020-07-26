@@ -8,5 +8,11 @@
   <link rel="stylesheet" href="/styles/app.css">
   <script defer src="/js/bundler.js"></script>
 
-  <title>{{ .Title }}</title>
+  <title>
+    {{ if eq .Title .Site.Title }}
+      {{ .Title }}
+    {{ else }}
+      {{ .Title }} - {{ .Site.Title }}
+    {{end}}
+  </title>
 </head>
