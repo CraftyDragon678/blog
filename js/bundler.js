@@ -1,2 +1,2 @@
-
+!function(){"use strict";window.matchMedia?(window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("body").classList.add("dark"):document.querySelector("body").classList.add("light"),window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{const d=e.matches?"dark":"light";document.querySelector("body").classList.add(d)})):document.querySelector("body").classList.add("light")}();
 //# sourceMappingURL=bundler.js.map

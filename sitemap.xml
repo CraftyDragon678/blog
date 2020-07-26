@@ -3,11 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://cragon.kro.kr/categories/</loc>
+    <loc>https://cragon.kro.kr/</loc>
+    <lastmod>2020-07-26T11:43:14+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://cragon.kro.kr/</loc>
+    <loc>https://cragon.kro.kr/posts/</loc>
+    <lastmod>2020-07-26T11:43:14+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cragon.kro.kr/posts/1/</loc>
+    <lastmod>2020-07-26T11:43:14+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cragon.kro.kr/categories/</loc>
   </url>
   
   <url>
