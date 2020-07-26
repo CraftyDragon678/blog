@@ -1,4 +1,4 @@
-baseURL = "https://cragon.kro.kr"
+baseURL = "https://blog.cragon.kro.kr"
 languageCode = "ko-kr"
 title = "Cragon's Blog"
 pygmentsUseClasses=true
