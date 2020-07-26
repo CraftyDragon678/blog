@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Cragon blog",
   "scripts": {
-    "hugo": "cd hugo && hugo server -D -p 3000",
+    "hugo": "cd hugo && hugo server -D",
     "webpack:watch": "webpack -w",
     "predeploy": "cd components && yarn build && cd .. && cd hugo && hugo && cd public && echo blog.cragon.kro.kr > CNAME",
     "deploy": "gh-pages -d hugo/public"
