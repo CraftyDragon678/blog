@@ -1,21 +1,8 @@
-
-
 .summary {
-  max-width: calc(100% - 3.5rem);
-  margin-right: auto;
-  margin-left: auto;
   margin-top: 2rem;
-  margin-bottom: 3rem;
-
-  & > a:hover {
-    cursor: pointer;
-  }
+  border-bottom: var(--content-topic-border);
 
   .info {
-    &:hover {
-      cursor: pointer;
-    }
-
     & > h1 {
       margin-bottom: 0.25rem;
       font-size: 1.975rem;
@@ -24,12 +11,8 @@
     }
   
     & > p {
-      margin-top: 0.25rem;
-      margin-bottom: 0.25rem;
+      margin: 0.25rem 0;
       font-size: 1.125rem;
     }
-
-
   }
-
 }
