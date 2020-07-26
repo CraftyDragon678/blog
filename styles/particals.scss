@@ -1,6 +1,11 @@
 header {
   background: var(--header-color);
   height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  font-size: 2rem;
 
   ul {
     display: flex;
