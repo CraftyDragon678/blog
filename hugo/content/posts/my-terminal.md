@@ -25,6 +25,7 @@ draft: true
 # zsh(Z shell)
 리눅스의 기본 터미널을 몹시나 불편합니다.
 그래서 zsh를 설치해줍니다.
+아래에서 나올 `instant_prompt`를 사용하려면 zsh가 최신버전이어야 합니다.
 
 간단합니다.
 ```bash
@@ -37,6 +38,23 @@ sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+## NerdFont
+테마를 설치하기 전에 NerdFont를 설치해줍니다.
+[https://github.com/ryanoasis/nerd-fonts](여기)에서 폰트를 받을 수 있습니다.
+
+
+## powerlevel10k
+zsh의 테마중 하나로 instant prompt를 지원해서 만족도가 매우 높습니다.
+```bash
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
+후에 `ZSH_THEME="powerlevel10k/powerlevel10k"`를 `~/.zshrc`에 추가해줍니다.
+
+`source ~/.zshrc`를 실행하거나 터미널을 새로 열면 configure창이 뜹니다.
+여기서 단계에 맞게 진행해줍니다.
+만약 위에서 NerdFont가 잘 적용 되었다면 다양한 아이콘을 터미널에서 보실 수 있습니다.
+
 # linuxbrew
 우선 MacOS에서도 사용을 할 수 있는 `brew`를 설치했습니다.
 [여기](https://brew.sh/)에서 설치할 수 있습니다.
@@ -44,6 +62,8 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
+
+brew는 패키지 관리를 해주는데 자동 업데이트 등을 포함하고 있어서 매우 편합니다.
 
 # git
 기본적으로 git은 깔려있지만 설정을 해주어야합니다.
@@ -78,4 +98,6 @@ gpg --full-generate-key
 여기서 정상적으로 된다면 좋겠지만 마우스를 인식하지 못하는 오류가 발생합니다.
 
 ~~는 추가예정~~
+
+# 
   
